@@ -67,12 +67,12 @@ final class Common
                 $dir_file = $dir . '/' . $file;
                 $type = filetype($dir_file);
 
-                if($type=='dir'){
+                if ($type=='dir') {
                     $extension = '';
-                }else{
+                } else {
                     $extension = pathinfo($dir_file)['extension'];
                 }
-                    $result[] = [
+                $result[] = [
                         'name' => $file,
                         'type' => $type,
                         'size' => filesize($dir_file),
@@ -88,10 +88,9 @@ final class Common
             }
             closedir($dir_handle);
             
-            if(!empty($result)){
-                array_multisort($sort_type,$sort_name,$result);
+            if (!empty($result)) {
+                array_multisort($sort_type, $sort_name, $result);
             }
-          
         }
         return $result;
     }
