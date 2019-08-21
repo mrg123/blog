@@ -2,3 +2,4 @@
 .vscode/
 vendor/
 php/smarty/templates_c/
+php/smarty/cache/
