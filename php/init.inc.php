@@ -12,8 +12,8 @@ $smarty->setPluginsDir(DIR_APPLICATION . 'smarty/plugins/');
 $smarty->setCacheDir(DIR_APPLICATION . 'smarty/cache/');
 $smarty->setConfigDir(DIR_APPLICATION . 'smarty/configs/');
 
-$smarty->caching = true;
-$smarty->cache_lifetime = -1;
+$smarty->caching = false;
+$smarty->cache_lifetime = 0;
 
-$smarty->left_delimiter = '<{';
-$smarty->right_delimiter = '}>';
+//$smarty->left_delimiter = '<{';
+//$smarty->right_delimiter = '}>';
