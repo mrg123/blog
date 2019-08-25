@@ -3,3 +3,4 @@
 vendor/
 php/smarty/templates_c/
 php/smarty/cache/
+nodejs/node_modules/
