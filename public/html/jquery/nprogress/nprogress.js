@@ -146,7 +146,7 @@
    */
 
   NProgress.done = function(force) {
-    //if (!force && !NProgress.status) return this;
+    if (!force && !NProgress.status) return this;
 
     return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
   };

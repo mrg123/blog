@@ -1,17 +1,14 @@
 {
-  "name": "nodejs",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "something test",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "jquery-pjax": "^2.0.1",
-    "nprogress": "^0.2.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "wang",
+  "license": "ISC",
+  "dependencies": {
+    "jquery-pjax": "^2.0.1"
+  }
 }

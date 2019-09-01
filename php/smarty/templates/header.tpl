@@ -21,8 +21,6 @@
   <script src="/theme/one/jquery/common.js"></script>
   <link rel="stylesheet" href="/theme/one/css/base.css">
 
-  <script src='/theme/one/jquery/nprogress/nprogress.js'></script>
-  <link rel='stylesheet' href='/theme/one/jquery/nprogress/nprogress.css'/>
 </head>
 
 <body>
