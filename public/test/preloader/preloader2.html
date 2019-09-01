@@ -1,3 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>preloader 预加载</title>
+  
+
+  <style type="text/css">
 /* 
 ---------------------------------------------
 preloader
@@ -81,4 +89,35 @@ preloader
     opacity: 0;
   }
 }
-/* preloader end */
+
+
+  </style>  
+  <script src="../jquery.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+
+$(window).on('load', function() {
+  $("#preloader").animate({
+			'opacity': '0'
+		}, 600, function(){
+			setTimeout(function(){
+				$("#preloader").css("visibility", "hidden").fadeOut();
+			}, 300);
+		});
+	});
+  </script>
+  
+</head>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+      <div class="jumper">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </div>  
+  <!-- ***** Preloader End ***** -->
+
+</body>
+</html>

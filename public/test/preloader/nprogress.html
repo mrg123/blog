@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <style type="text/css">
+
+  </style>
+
+
+  <script src="../jquery.min.js" type="text/javascript"></script>
+
+  <script src='nprogress/nprogress.js'></script>
+  <link rel='stylesheet' href='nprogress/nprogress.css'/>
+ 
+  <script type="text/javascript">
+$(document).on('page:fetch',   function() { NProgress.start(); });
+$(document).on('page:change',  function() { NProgress.done(); });
+$(document).on('page:restore', function() { NProgress.remove(); });
+
+(function(){
+  NProgress.set(0.0);     // Sorta same as .start()
+NProgress.set(0.4);
+NProgress.set(1.0);     // Sorta same as .done()
+});
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="mocha"></div>
+
+</body>
+
+</html>
