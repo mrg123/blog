@@ -18,9 +18,10 @@
   <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+  <link rel="stylesheet" href="/theme/one/iconfont/iconfont.css">
   <script src="/theme/one/jquery/common.js"></script>
   <link rel="stylesheet" href="/theme/one/css/base.css">
-
+  
 </head>
 
 <body>
