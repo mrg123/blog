@@ -1,5 +1,9 @@
 
 $(document).ready(function(){
+
+   
+   var use_cookies = init();
+
    // tip
    $('[data-toggle="tooltip"]').tooltip(); 
    // slide nav
@@ -8,7 +12,8 @@ $(document).ready(function(){
           // open slide nav
          $(this).children('.iconfont').removeClass('icon-caidan');   
          $(this).children('.iconfont').addClass('icon-nav');   
-         $('#slide-nav').show('normal');
+         $('#slide-nav').show('fast');
+        
       }else{
          // hide slide nav
          $(this).children('.iconfont').removeClass('icon-nav');   
@@ -20,11 +25,26 @@ $(document).ready(function(){
    // use cookies
    $('#use-cookies').click(function(){
       $('#cookies-right').remove();
+      Cookies.set('use-cookies', 1), { expires: 365 };
    });
 
    
 
 }); 
+
+// init
+function init(){
+   var use_cookies = 0;
+   if(typeof(Cookies.get('use-cookies'))!=='undefined'){
+      use_cookies = 1;
+      $('#cookies-right').remove();
+
+   }
+   return use_cookies;
+}
+
+// set in cookies
+
 
 
 
