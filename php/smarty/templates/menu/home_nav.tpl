@@ -23,19 +23,8 @@
         </div>
       </div>
     </div>
-    <div class="col p-0" id="fullpage">
-      <div class="section active" id="section0">
-        <h1>fullPage.js</h1>
-      </div>
-      <div class="section" id="section1"> 
-          <h1>Simple Demo</h1>
-      </div>
-      <div class="section" id="section2">
-        <h1>No wraps, no extra markup</h1>
-      </div>
-      <div class="section" id="section3">
-        <h1>Just the simplest demo ever</h1>
-      </div>
+    <div class="col p-0" id="main">
+     
 
     </div>
   </div>

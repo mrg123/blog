@@ -18,9 +18,6 @@
   <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-  <!-- full page -->
-  <link rel="stylesheet" type="text/css" href="/theme/one/jquery/fullpage/fullpage.css" />
-
   <!-- cookies -->
   <script src="/theme/one/jquery/js.cookie-2.2.1.min.js"></script>
 

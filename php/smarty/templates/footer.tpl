@@ -23,12 +23,6 @@
     </div>
 </div>
 
-<script type="text/javascript" src="/theme/one/jquery/fullpage/fullpage.js"></script>
-<script type="text/javascript">
-	var myFullpage = new fullpage('#fullpage', {
-	
-	});
-</script>
 
 </body>
 </html>
