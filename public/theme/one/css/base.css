@@ -1,4 +1,6 @@
-
+html,body{
+  height:100%;
+}
 
 /*
 --------------------
@@ -16,6 +18,18 @@ color:#fff;
   text-decoration: underline;
 }
 
+/*
+------------------------
+markdown
+-------------------------
+*/
+#markdown-edit{
+    border: none;
+    border-right: 1px solid #ccc;
+    background-color: #f6f6f6;
+    font-family: 'Monaco', courier, monospace;
+    vertical-align: top;
+}
 
 
 /* 

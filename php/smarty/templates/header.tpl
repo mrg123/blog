@@ -7,24 +7,30 @@
   <base href="{CATALOG_URL}">
 
   <!-- 新 Bootstrap4 核心 CSS 文件 -->
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.js"></script>
 
   <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- cookies -->
-  <script src="/theme/one/jquery/js.cookie-2.2.1.min.js"></script>
+  <script src="https://cdn.bootcss.com/js-cookie/latest/js.cookie.min.js"></script>
+
+  <!-- markdown -->
+  <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
+  <!-- vue -->
+  <script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+
 
   <link rel="stylesheet" href="/theme/one/iconfont/iconfont.css">
-  <script src="/theme/one/jquery/common.js"></script>
-  
   <link rel="stylesheet" href="/theme/one/css/base.css">
+
+  
   
 </head>
 

@@ -1,3 +1,5 @@
+  </div>
+</div>
 <div id="footer" class="container-fluid bg-dark fixed-bottom">
     <div class="row">
 
@@ -23,6 +25,25 @@
     </div>
 </div>
 
+<script src="/theme/one/jquery/common.js"></script>
+<script>
+      new Vue({
+        el: '#editor',
+        data: {
+          input: '# hello'
+        },
+        computed: {
+          compiledMarkdown: function () {
+            return marked(this.input, { sanitize: true })
+          }
+        },
+        methods: {
+          update: _.debounce(function (e) {
+            this.input = e.target.value
+          }, 300)
+        }
+      })
+</script>
 
 </body>
 </html>

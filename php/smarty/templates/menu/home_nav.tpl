@@ -23,9 +23,3 @@
         </div>
       </div>
     </div>
-    <div class="col p-0" id="main">
-     
-
-    </div>
-  </div>
-</div>

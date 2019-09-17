@@ -5,5 +5,5 @@
 
 
 
-
+{include file="main.tpl"}
 {include file="footer.tpl"}
