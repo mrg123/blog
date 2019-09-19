@@ -30,7 +30,7 @@
       new Vue({
         el: '#editor',
         data: {
-          input: '# hello'
+          input: '{$data}'
         },
         computed: {
           compiledMarkdown: function () {
