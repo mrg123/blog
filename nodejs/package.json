@@ -9,7 +9,8 @@
   "author": "wang",
   "license": "ISC",
   "dependencies": {
-    "jquery-pjax": "^2.0.1"
+    "jquery-pjax": "^2.0.1",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "webpack": "^4.40.2",
