@@ -22,8 +22,9 @@
 
   <!-- markdown -->
   <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
-  <!-- vue -->
+  <!-- lodash -->
   <script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
+  <!-- vue -->
   <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
 
 
