@@ -5,21 +5,10 @@ $(document).ready(function () {
 
    // tip
    $('[data-toggle="tooltip"]').tooltip();
+
    // slide nav
    $('#slide-nav-toggle').click(function () {
-      if ($(this).children('.iconfont').hasClass('icon-caidan')) {
-         // open slide nav
-         $(this).children('.iconfont').removeClass('icon-caidan');
-         $(this).children('.iconfont').addClass('icon-nav');
-         $('#slide-nav').show('fast');
-         saveCookies('slide_show', 1);
-      } else {
-         // hide slide nav
-         $(this).children('.iconfont').removeClass('icon-nav');
-         $(this).children('.iconfont').addClass('icon-caidan');
-         $('#slide-nav').hide('fast');
-         saveCookies('slide_show', 0);
-      }
+      toggleMenu();
    });
 
    // use cookies
@@ -57,6 +46,23 @@ function saveCookies(name, val) {
    });
 }
 
+// open menu
+function toggleMenu(){
+   var that = $('#slide-nav-toggle');
+   if (that.children('.iconfont').hasClass('icon-caidan')) {
+      // open slide nav
+      that.children('.iconfont').removeClass('icon-caidan');
+      that.children('.iconfont').addClass('icon-nav');
+      $('#slide-nav').show('fast');
+      saveCookies('slide_show', 1);
+   } else {
+      // hide slide nav
+      that.children('.iconfont').removeClass('icon-nav');
+      that.children('.iconfont').addClass('icon-caidan');
+      $('#slide-nav').hide('fast');
+      saveCookies('slide_show', 0);
+   }
+}
 
 
 

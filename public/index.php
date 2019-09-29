@@ -8,7 +8,7 @@ $smarty->assign('year',date('Y'));
 
 $data = file_get_contents(DIR_CATALOG . 'html/step.md');
 
-$smarty->assign('data',str_replace(PHP_EOL,'\n',$data));
+$smarty->assign('data',str_replace(PHP_EOL,'\r\n',$data));
 
 
 

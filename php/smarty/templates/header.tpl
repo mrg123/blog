@@ -22,9 +22,15 @@
 
   <!-- markdown -->
   <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
-  <!-- vue -->
+  <!-- lodash -->
   <script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
-  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+  <!-- vue 生产版本
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script> -->
+  <!-- vue 开发版本 -->
+  <script src="/theme/one/jquery/vue.js"></script>
+
+  <!-- dompurify -->
+  <script src="https://cdn.bootcss.com/dompurify/2.0.0/purify.min.js"></script>
 
 
   <link rel="stylesheet" href="/theme/one/iconfont/iconfont.css">

@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "43720281",
+      "name": "代码",
+      "font_class": "code",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "43720282",
+      "name": "圆圈",
+      "font_class": "circle-inner2",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "43728748",
+      "name": "代码 (1)",
+      "font_class": "code3",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "43720283",
+      "name": "圆圈",
+      "font_class": "circle2",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "43720279",
+      "name": "菜单",
+      "font_class": "nav",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "43720280",
+      "name": "nav",
+      "font_class": "caidan",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "43720427",
+      "name": "圆圈",
+      "font_class": "circle-inner",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "43720428",
+      "name": "圆圈",
+      "font_class": "circle",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "43720429",
+      "name": "代码",
+      "font_class": "code2",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    }
+  ]
+}
