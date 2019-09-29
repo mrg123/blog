@@ -24,6 +24,7 @@
   <script src="https://cdn.bootcss.com/marked/0.7.0/marked.min.js"></script>
   <!-- lodash -->
   <script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
+<<<<<<< HEAD
   <!-- vue 生产版本
   <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script> -->
   <!-- vue 开发版本 -->
@@ -31,6 +32,10 @@
 
   <!-- dompurify -->
   <script src="https://cdn.bootcss.com/dompurify/2.0.0/purify.min.js"></script>
+=======
+  <!-- vue -->
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+>>>>>>> ad643a7f9ab2c7cab1dacc28b4f59bf914b76f6f
 
 
   <link rel="stylesheet" href="/theme/one/iconfont/iconfont.css">
