@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>{$title}</title>
   <base href="{CATALOG_URL}">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
   <!-- 新 Bootstrap4 核心 CSS 文件 -->
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
