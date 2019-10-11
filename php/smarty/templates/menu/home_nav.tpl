@@ -18,8 +18,14 @@
     <div class="col-sm-2 px-1 bg-dark" id="slide-nav" style="display:none;">
       <div class="py-2 sticky-top flex-grow-1">
         <div class="nav flex-sm-column">
-          <a href="" class="nav-link">example</a>
 
+        {foreach from=$menus item=arr key=key}
+          {if !is_array($arr)}
+          <a href="" class="nav-link">{$arr}</a>
+          {else}
+          <a href="" class="nav-link">{$key}</a>
+          {/if}
+        {/foreach}
         </div>
       </div>
     </div>

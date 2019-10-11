@@ -51,6 +51,60 @@ final class Common
     }
 
     /**
+     * 遍历所有目录
+     */
+    public static function treeArr($dir, $arr)
+    {
+        if (is_dir($dir)) {
+            $fh=opendir($dir);
+        
+            while ($dirname=readdir($fh)) {
+                if ($dirname == '.' || $dirname == '..') {
+                    continue;
+                }
+
+                if (is_dir($dir. '/' .$dirname)) { 
+                    self::treeArr($dir. '/' .$dirname, $arr[$dirname]);
+                }else{
+                    $arr[] = $dirname;    
+                }
+            }
+            closedir($dir);
+        }
+    }
+
+    public static function searchDir($path,&$files){
+
+        if(is_dir($path)){
+    
+            $opendir = opendir($path);
+    
+            while ($file = readdir($opendir)){
+                if($file == '.' || $file == '..'){
+                    continue;    
+                }
+
+                if(!is_dir($path. '/' .$file)){
+                    $files[] = $file;
+                }else{
+                    self::searchDir($path.'/'.$file, $files[$file]); 
+                }
+            }
+            closedir($opendir);
+        }
+        
+    }
+    /**
+     * 遍历所有目录
+     */
+    public static function getDir($dir){
+        $files = array();
+        self::searchDir($dir, $files);
+        return $files;
+    }
+  
+
+    /**
      * 获取当目录所有文件
      */
     public static function currentDir($dir, $distinct = true)

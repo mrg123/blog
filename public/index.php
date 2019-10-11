@@ -8,8 +8,8 @@ $smarty->assign('year',date('Y'));
 
 /* menu */
 
-$menus = Common::currentDir(DIR_CATALOG_MD);
-print_r($menus);die();
+$menus = Common::getDir(DIR_CATALOG_MD);
+$smarty->assign('menus',$menus);
 
 $data = file_get_contents(DIR_CATALOG . 'md/step.md');
 
