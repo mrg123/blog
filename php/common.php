@@ -148,4 +148,16 @@ final class Common
         }
         return $result;
     }
+
+    /**
+     * 获取md内容
+     * 转换换行
+     */
+    public static function getMd($content){
+        $data = file_get_contents($content);  
+        //$result = preg_replace('/(\r\n)|\r|\n/','\r\n', $data);  
+        $result = str_replace(PHP_EOL,'\r\n',$data);
+        unset($data);
+        return $result;
+    }
 }

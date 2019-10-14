@@ -11,13 +11,33 @@ $smarty->assign('year',date('Y'));
 $menus = Common::getDir(DIR_CATALOG_MD);
 $smarty->assign('menus',$menus);
 
-$data = file_get_contents(DIR_CATALOG . 'md/step.md');
+/* router */
 
-$smarty->assign('data',str_replace(PHP_EOL,'\r\n',$data));
+$uri = $_SERVER['REQUEST_URI'];
+$content = '';
+if($uri!='/'){
+    if(is_file(DIR_CATALOG_MD . $uri)){
+        $content = $uri;    
+    }else{
+        $request = substr($uri, 1);
+        $request_arr = explode('/', substr($uri, 1));
+        // 考虑两层嵌套
+        if(!empty($request_arr[1])){
+            $content = $request_arr[0] . '/' . $request_arr[1];
+        }else{
+            $content = $request_arr[0];
+        }
+    }
+}
+if(is_file(DIR_CATALOG_MD.$content)){
+    $content = DIR_CATALOG_MD . $content;
+}else{
+    $content = DIR_CATALOG . 'md/step.md';
+}
 
 
-
-
+/* controller */
+$smarty->assign('data',Common::getMd($content));
 $smarty->display('index.tpl');
 
 

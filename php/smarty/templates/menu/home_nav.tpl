@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="home-nav">
   <ul class="navbar-nav">
     <li class="nav-item active">
-      <a class="nav-link pl-1" target="_blank" title="Be a useful web">Rudderless</a>
+      <a class="nav-link pl-1" target="_blank" title="Be a useful web" data-toggle="tooltip">Rudderless</a>
     </li>
     <li class="nav-tiem">
       <a class="nav-link active" target="_blank" id="slide-nav-toggle">
@@ -23,7 +23,12 @@
           {if !is_array($arr)}
           <a href="" class="nav-link">{$arr}</a>
           {else}
-          <a href="" class="nav-link">{$key}</a>
+            <a href="" class="nav-link">{$key}</a>
+              <ul class="navbar-nav">
+            {foreach from=$arr item=child key=key2}
+                <li class="nav-item"><a class="nav-link" href="">{$child}</a></li>
+            {/foreach}
+              </ul>
           {/if}
         {/foreach}
         </div>
