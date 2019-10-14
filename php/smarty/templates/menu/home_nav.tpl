@@ -21,12 +21,12 @@
 
         {foreach from=$menus item=arr key=key}
           {if !is_array($arr)}
-          <a href="" class="nav-link">{$arr}</a>
+          <a href="/{$arr}" class="nav-link">{$arr}</a>
           {else}
             <a href="" class="nav-link">{$key}</a>
               <ul class="navbar-nav">
             {foreach from=$arr item=child key=key2}
-                <li class="nav-item"><a class="nav-link" href="">{$child}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/{$key}/{$child}">{$child}</a></li>
             {/foreach}
               </ul>
           {/if}
