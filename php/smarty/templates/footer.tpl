@@ -48,7 +48,7 @@
     var vm = new Vue({
       el: '#editor',
       data: {
-        input: '{$data}',
+        input:'{$data}',
         isCircle: true,
         isCode:true
       },

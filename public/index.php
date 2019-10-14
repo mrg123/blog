@@ -12,10 +12,11 @@ $menus = Common::getDir(DIR_CATALOG_MD);
 $smarty->assign('menus',$menus);
 
 /* router */
-
 $uri = $_SERVER['REQUEST_URI'];
 $content = '';
 if($uri!='/'){
+    // 支持url的中文解码
+    $uri = urldecode($uri);
     if(is_file(DIR_CATALOG_MD . $uri)){
         $content = $uri;    
     }else{
@@ -32,7 +33,7 @@ if($uri!='/'){
 if(is_file(DIR_CATALOG_MD.$content)){
     $content = DIR_CATALOG_MD . $content;
 }else{
-    $content = DIR_CATALOG . 'md/step.md';
+    $content = DIR_CATALOG . '404.md';
 }
 
 

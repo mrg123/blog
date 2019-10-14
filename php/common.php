@@ -155,8 +155,10 @@ final class Common
      */
     public static function getMd($content){
         $data = file_get_contents($content);  
-        //$result = preg_replace('/(\r\n)|\r|\n/','\r\n', $data);  
         $result = str_replace(PHP_EOL,'\r\n',$data);
+        $result = preg_replace('/(\r\n)|\r|\n/','\r\n', $result);  
+        $result = str_replace("'","\'",$result);
+        //$result = htmlentities($result,ENT_QUOTES);
         unset($data);
         return $result;
     }
