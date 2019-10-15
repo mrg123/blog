@@ -17,7 +17,18 @@ $(document).ready(function () {
       saveCookies('use_cookies', 1);
    });
 
-
+   // second nav
+   $('.a-one').click(function(){
+      
+      if($(this).children('.iconfont').hasClass('iconicon_down')){
+         $(this).children('.iconfont').removeClass('iconicon_down');
+         $(this).children('.iconfont').addClass('icondown-trangle1');
+      }else{
+         $(this).children('.iconfont').removeClass('icondown-trangle1');
+         $(this).children('.iconfont').addClass('iconicon_down');
+      }
+      $(this).next().toggle();
+   });
 
 });
 
@@ -63,6 +74,7 @@ function toggleMenu(){
       saveCookies('slide_show', 0);
    }
 }
+
 
 
 

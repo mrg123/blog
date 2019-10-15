@@ -1,7 +1,24 @@
+@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_udp9pdjip5.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_udp9pdjip5.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_udp9pdjip5.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_udp9pdjip5.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_udp9pdjip5.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_udp9pdjip5.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+}
 html,body{
   height:100%;
+  font-family:"webfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
 }
-
+.hide{
+  display:none;
+}
 /*
 --------------------
 home-nav
@@ -17,7 +34,18 @@ color:#fff;
 #footer a{
   text-decoration: underline;
 }
-
+#slide-nav{
+  color:#629edd;
+}
+a.a-one{
+  color:#0056b3;
+  padding: .5rem 1rem;
+  text-decoration: underline;
+  cursor:pointer;
+}
+.second-nav{
+  padding-left:1.5rem; 
+}
 /*
 ------------------------
 editor

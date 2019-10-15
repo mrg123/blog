@@ -23,8 +23,10 @@
           {if !is_array($arr)}
           <a href="/{$arr}" class="nav-link">{$arr}</a>
           {else}
-            <a href="" class="nav-link">{$key}</a>
-              <ul class="navbar-nav">
+            <a target="_blank" class="a-one">{$key}
+                <span class="iconfont icondown-trangle1"></span>
+            </a>
+              <ul class="navbar-nav hide second-nav">
             {foreach from=$arr item=child key=key2}
                 <li class="nav-item"><a class="nav-link" href="/{$key}/{$child}">{$child}</a></li>
             {/foreach}
