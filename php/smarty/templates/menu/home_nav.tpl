@@ -5,7 +5,7 @@
     </li>
     <li class="nav-tiem">
       <a class="nav-link active" target="_blank" id="slide-nav-toggle">
-        <span class="iconfont icon-caidan"></span>
+        <span class="iconfont iconcaidan"></span>
       </a>
     </li>
 
@@ -24,7 +24,7 @@
           <a href="/{$arr}" class="nav-link">{$arr}</a>
           {else}
             <a target="_blank" class="a-one">{$key}
-                <span class="iconfont icondown-trangle1"></span>
+                <span class="iconfont icondowntrangle1"></span>
             </a>
               <ul class="navbar-nav hide second-nav">
             {foreach from=$arr item=child key=key2}

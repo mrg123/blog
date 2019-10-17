@@ -6,8 +6,8 @@
       </div>
       <div v-html="compiledMarkdown" class="col" id="markdown-view"></div>
       <div class="position-absolute" id="editor-operation">
-        <span class="iconfont" :class="{ 'icon-circle':isCircle,'icon-circle-inner':isCircleInner}" @click="changeCircle"></span>
-        <span class="iconfont" :class="{ 'icon-code':isCode,'icon-code3':isCode3}" @click="changeCode"></span>
+        <span class="iconfont" :class="{ 'iconcircle':isCircle,'iconcircle-inner':isCircleInner}" @click="changeCircle"></span>
+        <span class="iconfont" :class="{ 'iconcode':isCode,'iconcode3':isCode3}" @click="changeCode"></span>
       </div>
     </div>
 

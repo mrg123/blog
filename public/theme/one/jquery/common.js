@@ -20,12 +20,12 @@ $(document).ready(function () {
    // second nav
    $('.a-one').click(function(){
       
-      if($(this).children('.iconfont').hasClass('iconicon_down')){
-         $(this).children('.iconfont').removeClass('iconicon_down');
-         $(this).children('.iconfont').addClass('icondown-trangle1');
+      if($(this).children('.iconfont').hasClass('iconicondown')){
+         $(this).children('.iconfont').removeClass('iconicondown');
+         $(this).children('.iconfont').addClass('icondowntrangle1');
       }else{
-         $(this).children('.iconfont').removeClass('icondown-trangle1');
-         $(this).children('.iconfont').addClass('iconicon_down');
+         $(this).children('.iconfont').removeClass('icondowntrangle1');
+         $(this).children('.iconfont').addClass('iconicondown');
       }
       $(this).next().toggle();
    });
@@ -60,16 +60,16 @@ function saveCookies(name, val) {
 // open menu
 function toggleMenu(){
    var that = $('#slide-nav-toggle');
-   if (that.children('.iconfont').hasClass('icon-caidan')) {
+   if (that.children('.iconfont').hasClass('iconcaidan')) {
       // open slide nav
-      that.children('.iconfont').removeClass('icon-caidan');
-      that.children('.iconfont').addClass('icon-nav');
+      that.children('.iconfont').removeClass('iconcaidan');
+      that.children('.iconfont').addClass('iconnav');
       $('#slide-nav').show('fast');
       saveCookies('slide_show', 1);
    } else {
       // hide slide nav
-      that.children('.iconfont').removeClass('icon-nav');
-      that.children('.iconfont').addClass('icon-caidan');
+      that.children('.iconfont').removeClass('iconnav');
+      that.children('.iconfont').addClass('iconcaidan');
       $('#slide-nav').hide('fast');
       saveCookies('slide_show', 0);
    }
