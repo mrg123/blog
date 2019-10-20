@@ -10,7 +10,7 @@
 }
 html,body{
   height:100%;
-  font-family:"webfont" !important;
+  font-family:"webfont";
   font-size:16px;font-style:normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
@@ -48,7 +48,7 @@ a.a-one{
 }
 /*
 ------------------------
-editor
+editor markdown
 ------------------------
 */
 #editor-operation{
@@ -67,11 +67,45 @@ editor
   display:none;
 }
 
-/*
-------------------------
-markdown
--------------------------
-*/
+
+
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+blockquote::after{
+  content: '';
+}
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+#editor{
+  padding-top:15px;
+  
+}
 #markdown-edit{
     border: none;
     background-color: #f6f6f6;

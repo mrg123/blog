@@ -62,7 +62,14 @@
           console.log(clean);
           */
 
-          return marked(this.input);
+          return marked(this.input,{
+            breaks:true,
+            gfm:false,
+            headerIds:true,
+            headerPrefix:'',
+            mangle:false,
+            pedantic:false
+          });
         },
         isCircleInner: function(){
           return !this.isCircle;
