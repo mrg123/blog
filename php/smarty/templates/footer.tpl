@@ -2,15 +2,15 @@
 
     <div id="editor" class="row m-0 position-relative">
       <div class="col p-0" id="editor-code">
-        <textarea :value="input" @input="updateEditor" id="markdown-edit" class="w-100 h-100"></textarea>
+        <textarea :value="input" @input="updateEditor" id="markdown-edit" class="w-100 h-100" rel="nofollow"></textarea>
       </div>
-      <div v-html="compiledMarkdown" class="col" id="markdown-view"></div>
+      <div v-html="compiledMarkdown" class="col" id="markdown-view"></div>   
       <div class="position-absolute" id="editor-operation">
         <span class="iconfont" :class="{ 'iconcircle':isCircle,'iconcircle-inner':isCircleInner}" @click="changeCircle"></span>
         <span class="iconfont" :class="{ 'iconcode':isCode,'iconcode3':isCode3}" @click="changeCode"></span>
-      </div>
-    </div>
-
+       
+      </div>   
+    </div> 
   </div>
 
 
@@ -18,13 +18,14 @@
   </div>
   <div id="footer" class="container-fluid bg-dark fixed-bottom">
     <div class="row">
-
       <div class="col-md-6">
         <p class="m-0 text-white">
           ©2012-{$year}
 
           <a href="" class="text-white" title="Readme.md" data-toggle="tooltip" data-placement="top">mrg123.com</a>
           All rights reserved.
+          
+          @ mrg123@qq.com
         </p>
       </div>
       <div class="col-md-4 offset-md-2 text-right">
@@ -35,10 +36,6 @@
           <button class="btn m-0 rounded-0 btn-primary btn-sm border-0" id="use-cookies">Okay</button>
         </p>
       </div>
-
-
-
-
     </div>
   </div>
 
@@ -69,7 +66,7 @@
             headerPrefix:'',
             mangle:false,
             pedantic:false
-          });
+          }) + copyRight();
         },
         isCircleInner: function(){
           return !this.isCircle;

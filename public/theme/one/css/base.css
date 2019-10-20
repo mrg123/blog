@@ -85,6 +85,10 @@ editor markdown
     font-family: 'Monaco', courier, monospace;
     vertical-align: top;
 }
+#markdown-view{
+  max-width:90%;
+  text-align:justify;
+}
 
 pre {
   display: block;

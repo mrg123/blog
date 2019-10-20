@@ -1,3 +1,17 @@
+// Page loading animation - preloader
+$(window).on('load', function () {
+   /*  preloader */
+   $("#preloader").animate({
+      'opacity': '0'
+   }, 600, function () {
+      setTimeout(function () {
+         $("#preloader").css("visibility", "hidden").fadeOut();
+      }, 300);
+   });
+   watchWindow();
+});
+
+// Page ready
 $(document).ready(function () {
 
 
@@ -78,18 +92,7 @@ function toggleMenu(){
 
 
 
-// Page loading animation - preloader
-$(window).on('load', function () {
-   /*  preloader */
-   $("#preloader").animate({
-      'opacity': '0'
-   }, 600, function () {
-      setTimeout(function () {
-         $("#preloader").css("visibility", "hidden").fadeOut();
-      }, 300);
-   });
-   watchWindow();
-});
+
 
 //HTML转义
 function HTMLEncode(html) {
@@ -107,15 +110,28 @@ function HTMLDecode(text) {
    temp = null; 
    return output; 
 } 
-
+// change body height
 function watchWindow (){ 
    var w = document.documentElement.clientWidth;
    var h = document.documentElement.clientHeight;
    console.log(h);
+
+   var editor_h = $('#editor').height();
+   console.log(editor_h);
+   if(editor_h < h){
    $('body').css({
       height:(h)+'px'
    });
    $('#main').css({
       height:(h-24-57)+'px'
    });
+   }
+}
+// 文章末尾
+function copyRight(){
+   var _html = '<p class="font-italic mt-4 pl-4"><a rel="nofollow"  target="_blank">';
+   _html += '转载内容版权归作者及来源网站所有,本站原创内容转载请注明来源,部分内容来自网络,如有内容侵权请联系我们';
+   _html += '</a></p>';
+
+   return _html;
 }

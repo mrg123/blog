@@ -1,7 +1,8 @@
 # music list
 
 1. All I Want--Kodaline
-2. 
+
+2. Better Together - Jack Johnson
 
 
 
