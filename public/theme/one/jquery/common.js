@@ -88,6 +88,7 @@ $(window).on('load', function () {
          $("#preloader").css("visibility", "hidden").fadeOut();
       }, 300);
    });
+   watchWindow();
 });
 
 //HTML转义
@@ -106,3 +107,15 @@ function HTMLDecode(text) {
    temp = null; 
    return output; 
 } 
+
+function watchWindow (){ 
+   var w = document.documentElement.clientWidth;
+   var h = document.documentElement.clientHeight;
+   console.log(h);
+   $('body').css({
+      height:(h)+'px'
+   });
+   $('#main').css({
+      height:(h-24-57)+'px'
+   });
+}

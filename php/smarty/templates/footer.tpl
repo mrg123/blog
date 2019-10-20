@@ -1,6 +1,6 @@
   <div class="col p-0" id="main">
 
-    <div id="editor" class="row m-0 h-100 position-relative">
+    <div id="editor" class="row m-0 position-relative">
       <div class="col p-0" id="editor-code">
         <textarea :value="input" @input="updateEditor" id="markdown-edit" class="w-100 h-100"></textarea>
       </div>
