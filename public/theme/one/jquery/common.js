@@ -125,7 +125,10 @@ function watchWindow (){
    $('#main').css({
       height:(h-24-57)+'px'
    });
+   
    }
+
+   
 }
 // 文章末尾
 function copyRight(){
