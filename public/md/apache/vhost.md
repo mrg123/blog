@@ -28,3 +28,69 @@ AddOutputFilter DEFLATE css js html htm gif jpg png bmp php
 </Directory>
 ```
 
+
+
+## Options Indexes 开启目录访问
+
+```
+<VirtualHost *:80>
+    DocumentRoot "D:\git\test"
+    ServerName test.localweb.com
+    ServerAlias 
+  <Directory "">
+      Options FollowSymLinks ExecCGI
+      AllowOverride All
+      Order allow,deny
+      Allow from all
+     Require all granted
+  </Directory>
+</VirtualHost>
+```
+
+
+
+## 开启mod_status - apache性能监控
+
+> Apache Server Status 可以监控到apache的性能[^1]
+
+httpd.conf去掉#注释
+
+```
+LoadModule status_module modules/mod_status.so
+```
+
+vhosts.conf
+
+增加
+
+```
+ExtendedStatus on
+<Location "/server-status">
+    SetHandler server-status
+</Location>
+```
+
+示例:
+
+```
+ExtendedStatus on
+<VirtualHost _default_:80>
+DocumentRoot "G:\phpStudy\PHPTutorial\WWW"
+  <Directory "G:\phpStudy\PHPTutorial\WWW">
+    Options -Indexes -FollowSymLinks +ExecCGI
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+    Require all granted
+  </Directory>
+<Location "/server-status">
+    SetHandler server-status
+</Location>
+</VirtualHost>
+```
+
+
+
+
+
+[^1]:  https://httpd.apache.org/docs/current/mod/mod_status.html "mod_status"
