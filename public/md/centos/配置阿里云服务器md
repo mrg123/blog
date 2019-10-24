@@ -1,0 +1,53 @@
+# 手把手配置阿里云服务器
+
+博客从我大学时候就有了,但是我很懒,比较少写,一方面是自己没有好的文笔,另一方面是这不能带来利益,再者写一篇完整清晰的教材往往需要比配置的过程长2-3倍.
+
+另外本文只针对**centos服务器**的配置,**主要是配置php的运行环境**.当然也包括一些基本的linux的使用技巧.
+
+本次实验的阿里云服务器是centos7.0 64位版本.
+
+下载putty,登录到centos
+
+1 修改ssh的登录端口,安全第一
+
+vi /etc/ssh/sshd_config
+
+Port 22改为Port 6666(自定义端口)
+
+2 重启sshd服务
+
+service sshd restart
+
+推荐有兴趣的同学去看阿里云的帮助手册,写的非常详细.
+
+参考:http://help.aliyun.com/knowledge_detail/5974781.html
+
+3 安装wdcp
+
+如果你对centos非常熟悉可以独立安装apache,php,mysql.
+
+如果你是新手的话,还是安装类似wdcp这种带有后台管理的集合包吧.主要在于wdcp有专业的人士在维护.
+
+3.1源码安装
+
+wget http://dl.wdlinux.cn:5180/lanmp_laster.tar.gz
+
+tar zxvf lanmp_laster.tar.gz
+
+sh install.sh
+
+安装过程中如果ssh掉线的话,重新登陆ssh,并执行
+
+screen -r lanmp
+
+3.2RPM包安装,速度更快,不过centos7.0确定不能用RPM包安装.
+
+wget http://down.wdlinux.cn/in/lanmp_wdcp_ins.sh
+
+sh lanmp_wdcp_ins.sh
+
+参考:http://www.wdlinux.cn/wdcp/install.html
+
+**但要注意的是wdcp的安全不是100%的,有爆过几个危险漏洞,请时刻保持最新版本.另外如果RPM包无法安装的话,那就安装源码包吧,慢一点就是了.另外wdcp的组合版本可能非常的旧,你也许要因此更新,并且对于openssl的支持需要花费点时间.****当然了如果你是新手的话,请忽略掉后面的一切考虑,新手只需要快**
+
+4 由于此次的实验版本是centos7.0的所以需要独立开来安装各个组合,这里的选择是LAMP

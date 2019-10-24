@@ -6,7 +6,11 @@
 4. NEXT TO YOU  - 寄生兽 | 加奈
 5. Somewhere - Scott & Brendo
 6. 兄弟-soler
-7. 
+7. 差一點-阿杜
+8. 海洋-soler
+9. 
+
+
 
 
 
