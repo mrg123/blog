@@ -1,4 +1,37 @@
-# apache配置404等错误页面的写法
+# vhost常见配置
+
+## window添加虚拟域名站点
+
+例如: http://wsj.demo.com/ 綁定到 "D:/xampp/htdocs/zk/wsj" 
+
+1. 修改本地hosts文件,C:/WINDOWSsystem32driversetchosts 末尾加入虛擬域名:  
+
+```
+127.0.0.1 wsj.demo.com
+```
+
+
+
+2. 確保apache 有開啟httpd-vhost.conf  虛擬域名配置.打開xamppapacheconfhttpd.conf文件，搜索 “Include  conf/extra/httpd-vhosts.conf”，確保前面沒有 # 註釋符，也就是確保引入了 vhosts 虛擬主機配置文件。
+
+3. 在虛擬主機設置文件 xamppapacheconfextrahttpd-vhosts.conf 添加:
+
+```
+<VirtualHost *:80>
+ DocumentRoot "D:/xampp/htdocs/zk/wsj"
+ ServerName wsj.demo.com
+ </VirtualHost>
+ <VirtualHost *:80>
+ DocumentRoot "D:/xampp/htdocs/"
+ ServerName localhost
+ </VirtualHost>
+```
+
+4. 重啟apache
+
+
+
+## apache配置404等错误页面的写法
 
 一般写在vhost.conf,或httpd.conf
 

@@ -7,7 +7,6 @@ $smarty->assign('title','Mrg123|私欲日生如地上尘,一日不扫便又有�
 $smarty->assign('year',date('Y'));
 
 /* menu */
-
 $menus = Common::getDir(DIR_CATALOG_MD);
 $smarty->assign('menus',$menus);
 
@@ -29,6 +28,8 @@ if($uri!='/'){
             $content = $request_arr[0];
         }
     }
+}else{
+    $content = '../nav.md';
 }
 if(is_file(DIR_CATALOG_MD.$content)){
     $content = DIR_CATALOG_MD . $content;
