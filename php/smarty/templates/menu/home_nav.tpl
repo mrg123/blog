@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="home-nav">
   <ul class="navbar-nav">
     <li class="nav-item active">
-      <a class="nav-link pl-1" target="_blank" title="Be a useful web" data-toggle="tooltip">Rudderless</a>
+      <a class="nav-link pl-1" title="Be a useful web" data-toggle="tooltip" >Rudderless</a>
     </li>
     <li class="nav-tiem">
       <a class="nav-link active" target="_blank" id="slide-nav-toggle">
@@ -15,8 +15,8 @@
 
 <div class="container-fluid h-100" style="padding-top:56px;padding-bottom: 24px;">
   <div class="row justify-content-center h-100">
-    <div class="col-sm-2 px-1 bg-dark" id="slide-nav" style="display:none;">
-      <div class="py-2 sticky-top flex-grow-1">
+    <div class="col-sm-2 px-1" id="slide-nav">
+      <div class="py-2 sticky-top flex-grow-1" id="slide-content" style="display:none;">
         <div class="nav flex-sm-column">
 
         {foreach from=$menus item=arr key=key}
