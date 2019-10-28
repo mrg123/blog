@@ -6,6 +6,7 @@
   <title>{$title}</title>
   <base href="{CATALOG_URL}">
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
 
 
   <!-- 新 Bootstrap4 核心 CSS 文件 

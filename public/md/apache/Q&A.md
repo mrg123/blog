@@ -1,6 +1,6 @@
 # Q&A
 
-## Q: apache logs 文件过大怎么办?
+## apache logs 文件过大怎么办?
 
 > 关于apache下logs文件过大的问题处理方式:
 >
@@ -58,5 +58,7 @@
 >
 > 这里命令中的路径/www/wdlinux/apache/根据你服务器的实际安装位置改变,必须要绝对地理位置.
 
+## apache  Rewrite中文url乱码
 
+> TODO 
 
