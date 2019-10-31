@@ -159,6 +159,8 @@ final class Common
         $result = str_replace('\\','\\\\', $data);  
         $result = preg_replace('/(\r\n)|\r|\n/','\r\n', $result);  
         $result = str_replace("'","\'",$result);
+        $result = str_replace("<script","\<script",$result);
+        $result = str_replace("</script","\<\/script",$result);
         
         //$result = htmlentities($result,ENT_QUOTES);
         unset($data);

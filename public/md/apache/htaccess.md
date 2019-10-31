@@ -30,6 +30,23 @@ RewriteRule ^(.+)$ index.php [QSA,L]
 
 > 简单的php路由 [^2]
 
+## cPanel中,使用.htaccess设置主域名指向子目录
+
+默认情况下主域名只能指向public_html目录,这时候再添加其他子域名,或附加域名,整个网站目录结构将相当混乱.
+
+在/public_html/创建.htaccess,利用apache的rewrite将域名指向子目录,.htaccess内容如下
+
+```
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?example.com$
+RewriteCond %{REQUEST_URI} !^/blog/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /blog/$1
+RewriteCond %{HTTP_HOST} ^(www.)?example.com$
+RewriteRule ^(/)?$ blog/index.php [L]
+```
+
 
 
 
