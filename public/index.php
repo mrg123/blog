@@ -39,7 +39,7 @@ if(is_file(DIR_CATALOG_MD.$content)){
 
 
 /* controller */
-$smarty->assign('webpack',false);
+$smarty->assign('webpack',true);
 $smarty->assign('data',Common::getMd($content));
 $smarty->display('index.tpl');
 

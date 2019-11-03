@@ -16,8 +16,9 @@
  
  
   {if $webpack}
-  <script src="/theme/one/webpack/header.1b5bb.js"></script>
-  <link rel="stylesheet" href="/theme/one/webpack/style.1b5bb.css">
+  <!-- TODO jQuery is not defined -->
+  <script src="/theme/one/webpack/header.7738c.js"></script>
+  <link rel="stylesheet" href="/theme/one/webpack/style.7738c.css">
   {else}
 
   <script src="/theme/one/cdn/jquery-3.4.1.min.js"></script>
