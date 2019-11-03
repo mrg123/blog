@@ -4,16 +4,38 @@
   "description": "something test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --mode development --watch",
+    "start": "webpack --mode development",
+    "deploy": "webpack --mode production"
   },
   "author": "wang",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
+    "clean-css": "^4.2.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.6.0",
+    "eslint-loader": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.2.0",
+    "ignore-loader": "^0.1.2",
+    "jquery": "^3.4.1",
     "jquery-pjax": "^2.0.1",
     "marked": "^0.7.0",
-    "vue": "^2.6.10"
-  },
-  "devDependencies": {
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "popper.js": "^1.16.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.2.0",
+    "vue": "^2.6.10",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   }
