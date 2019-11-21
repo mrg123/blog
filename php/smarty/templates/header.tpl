@@ -38,6 +38,7 @@
   
   <link rel="stylesheet" href="/theme/one/iconfont/iconfont.css">
   
+  <script data-ad-client="ca-pub-6344293033198481" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
