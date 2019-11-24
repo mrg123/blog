@@ -29,7 +29,7 @@ if($uri!='/'){
         }
     }
 }else{
-    $content = '../nav.md';
+    $content = 'jquery/ajax.md';
 }
 if(is_file(DIR_CATALOG_MD.$content)){
     $content = DIR_CATALOG_MD . $content;
