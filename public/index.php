@@ -38,7 +38,9 @@ if(is_file(DIR_CATALOG_MD.$content)){
 }
 
 /* title */
-$smarty->assign('title',str_replace('/','|',substr($title,1)));
+$title = str_replace('/','|',substr($title,1));
+$title = str_replace('.md','',$title);
+$smarty->assign('title',$title);
 $smarty->assign('year',date('Y'));
 
 /* controller */
