@@ -2,9 +2,7 @@
 require '../php/init.inc.php';
 
 
-/* title */
-$smarty->assign('title','Mrg123|私欲日生如地上尘,一日不扫便又有一层');
-$smarty->assign('year',date('Y'));
+
 
 /* menu */
 $menus = Common::getDir(DIR_CATALOG_MD);
@@ -29,14 +27,19 @@ if($uri!='/'){
         }
     }
 }else{
-    $content = 'jquery/ajax.md';
+    $content = '/jquery/ajax.md';
 }
 if(is_file(DIR_CATALOG_MD.$content)){
+    $title = $content;
     $content = DIR_CATALOG_MD . $content;
 }else{
+    $title = '404';
     $content = DIR_CATALOG . '404.md';
 }
 
+/* title */
+$smarty->assign('title',str_replace('/','|',substr($title,1)));
+$smarty->assign('year',date('Y'));
 
 /* controller */
 $smarty->assign('webpack',false);
