@@ -48,7 +48,11 @@ RewriteRule ^(/)?$ blog/index.php [L]
 ```
 
 
-
+# 内网开启端口,方便其他电脑访问开发电脑
+Listen 8044
+Listen 127
+Listen 128
+<VirtualHost _default_:127>
 
 
 
